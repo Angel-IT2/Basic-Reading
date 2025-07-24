@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading</title>
+    <style>
+        
+
+      body
+      {
+        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        width: 50%;
+        margin: 60px auto;
+      }
+        h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #53a8b6;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid #53a8b6;
+        color: grey;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        text-align: center;
+        font-family: monospace;
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+        color: grey;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #53a8b6;
+        color: white;
+        font-style: oblique;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 16px 24px;
+        border: 1px solid whitesmoke;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        line-height: 22px;
+
+      }
+
+      img
+      {
+        margin: 0 auto;
+        display: block;
+        max-width: 100x;
+        border-radius: 4px;
+
+      }
+
+      button:hover {
+        opacity: 0.9;
+        color: white;
+        background: #79c2d0;
+        cursor: pointer;
+      }
+
+      .book {
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        box-shadow: 0px 0px 10px rgba(31, 152, 177, 0.5);
+        border: 1px solid #6acafc;
+        border-radius: 4px;
+        transition: all 200ms ease-in-out;
+      }
+
+      .learn {
+        color: #6acafc;
+        text-decoration: none;
+        font-size: 19px;
+      }
+
+      .details
+      {
+        color: #6acafc;
+      }
+
+      .learn:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    
+    </style>
+</head>
+<body>
+    <div class="book">
+        <h1>
+            I love Reading
+        </h1>
+        <h2>
+            Especially the Knowledge Books
+        </h2>
+        <hr>
+        <img src="https://www.timeforkids.com/wp-content/uploads/2021/05/210524_CMS_Debate_Hero.jpg" alt="Knowledge Books">
+        <hr>
+        <p>
+            <strong>Reading</strong> is the process of taking in the sense or meaning of letters, symbols, etc., especially by sight or touch.
+            <br>
+            <span>
+              For educators and researchers, reading is a multifaceted process involving such areas as word recognition, orthography (spelling), alphabetics, phonics, phonemic awareness, vocabulary, comprehension, fluency, and motivation.
+            </span>
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Reading" target="_blank" class="learn">
+        <hr>
+          <em> Learn more on Wikipedia</em>
+        </a>
+        <button class="motivation-button"> Get Motivated 📔 </button>
+        <p class="footer">
+            <strong><em> This page was built by
+              <a href="https://www.linkedin.com/in/vutshila-angel-maluleke-09a85b26a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoWTf6f8AShyWgiR2Asc0hg%3D%3D" target="_blank" class="details"> Angel Maluleke </a></em>
+              <a href="https://www.linkedin.com/in/vutshila-angel-maluleke-09a85b26a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoWTf6f8AShyWgiR2Asc0hg%3D%3D" target="_blank" class="details"> </a></strong>
+              <a href="https://www.linkedin.com/in/vutshila-angel-maluleke-09a85b26a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoWTf6f8AShyWgiR2Asc0hg%3D%3D" target="_blank" class="details"> </a>
+        </p>
+    </div>
+    <script>
+        function learn() 
+        {
+          let name = prompt("What is your name?").trim();
+          let email = prompt("What is your email address?").trim();
+          let author = prompt("What is your favorite book author?").trim();
+
+          if(name === "" || email === "" || author === "")
+        {
+          alert("Please enter your full details, every question needs to be answered😞");
+        }else
+        {
+          alert(
+            "🎉 Thank you, " +
+            name +
+            "! 🎉\n\n📧 We'll be in touch via email soon. Meanwhile, why don't you dive into a book by your favorite author, " +
+            author +
+            "? 📚\n\nHappy Reading! 📖"
+          );
+        }
+        }
+  
+        let learnButton = document.querySelector(".motivation-button");
+        learnButton.addEventListener("click", learn);
+      </script>
+</body>
+</html>
